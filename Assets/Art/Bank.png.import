@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://tnbsx5fpuvhc"
-path="res://.godot/imported/1 Beat.png-0bfb8e459c6d96c07d490e88f3161bc5.ctex"
+uid="uid://bj20jrhctpylr"
+path="res://.godot/imported/Bank.png-23658d9cbf97e2dbb08fbd716742128c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/1 Beat.png"
-dest_files=["res://.godot/imported/1 Beat.png-0bfb8e459c6d96c07d490e88f3161bc5.ctex"]
+source_file="res://Assets/Art/Bank.png"
+dest_files=["res://.godot/imported/Bank.png-23658d9cbf97e2dbb08fbd716742128c.ctex"]
 
 [params]
 

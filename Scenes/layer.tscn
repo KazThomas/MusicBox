@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cua4ws02vsghc"]
 
-[ext_resource type="Texture2D" uid="uid://dilxepra33a7g" path="res://Assets/Border.png" id="1_2ajos"]
+[ext_resource type="Texture2D" uid="uid://dilxepra33a7g" path="res://Assets/Art/Border.png" id="1_opnfb"]
 
 [node name="RigidBody2D" type="RigidBody2D"]
 mass = 0.01
@@ -15,4 +15,4 @@ polygon = PackedVector2Array(-306, 407, 310, 406, 309, -442, 343, -442, 342, 427
 
 [node name="Border" type="Sprite2D" parent="."]
 position = Vector2(339, 414)
-texture = ExtResource("1_2ajos")
+texture = ExtResource("1_opnfb")

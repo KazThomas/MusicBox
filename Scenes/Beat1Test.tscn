@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cyjvljsiwwps2"]
 
 [ext_resource type="Script" path="res://Scripts/Beat1Test.gd" id="1_4vtri"]
-[ext_resource type="Texture2D" uid="uid://tnbsx5fpuvhc" path="res://Assets/1 Beat.png" id="1_nlys8"]
+[ext_resource type="Texture2D" uid="uid://tnbsx5fpuvhc" path="res://Assets/Art/1 Beat.png" id="1_nlys8"]
 [ext_resource type="AudioStream" uid="uid://bth10w3uoy0p8" path="res://Assets/Audio/BitCrunch C 1Beat.wav" id="2_6quuk"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ewmc5"]

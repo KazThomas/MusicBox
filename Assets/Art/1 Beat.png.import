@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p7h1oja538fa"
-path="res://.godot/imported/Vinyl.png-111229ff08c368e4a43f9d7615964b66.ctex"
+uid="uid://tnbsx5fpuvhc"
+path="res://.godot/imported/1 Beat.png-f0a863fcd03e196f296ca6331cb2e921.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Vinyl.png"
-dest_files=["res://.godot/imported/Vinyl.png-111229ff08c368e4a43f9d7615964b66.ctex"]
+source_file="res://Assets/Art/1 Beat.png"
+dest_files=["res://.godot/imported/1 Beat.png-f0a863fcd03e196f296ca6331cb2e921.ctex"]
 
 [params]
 
