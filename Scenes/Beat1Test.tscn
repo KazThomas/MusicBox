@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://cyjvljsiwwps2"]
+
+[ext_resource type="Script" path="res://Scripts/Beat1Test.gd" id="1_4vtri"]
+[ext_resource type="Texture2D" uid="uid://tnbsx5fpuvhc" path="res://Assets/1 Beat.png" id="1_nlys8"]
+[ext_resource type="AudioStream" uid="uid://bth10w3uoy0p8" path="res://Assets/Audio/BitCrunch C 1Beat.wav" id="2_6quuk"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ewmc5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6vtyl"]
+size = Vector2(36, 34)
+
+[node name="Beat1" type="RigidBody2D"]
+mass = 0.64
+physics_material_override = SubResource("PhysicsMaterial_ewmc5")
+gravity_scale = 0.3
+script = ExtResource("1_4vtri")
+
+[node name="1Beat" type="Sprite2D" parent="."]
+scale = Vector2(0.928966, 0.878472)
+texture = ExtResource("1_nlys8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6vtyl")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_6quuk")
+autoplay = true
+bus = &"BlockNotes"

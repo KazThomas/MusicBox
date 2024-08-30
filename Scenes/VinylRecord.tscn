@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://ondofxvedg8l"]
+
+[ext_resource type="Texture2D" uid="uid://p7h1oja538fa" path="res://Assets/Vinyl.png" id="1_mslpv"]
+[ext_resource type="Script" path="res://Scripts/VinylRecord.gd" id="2_sxc0j"]
+
+[sub_resource type="GDScript" id="GDScript_i2lhh"]
+script/source = "extends Sprite2D
+
+var speed := 400
+var angular_speed := PI
+
+func _process(delta):
+	
+	rotation += angular_speed * delta
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_13w0g"]
+radius = 428.057
+
+[node name="record" type="RigidBody2D"]
+collision_layer = 0
+collision_mask = 0
+can_sleep = false
+freeze = true
+script = ExtResource("2_sxc0j")
+
+[node name="Vinyl" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_mslpv")
+script = SubResource("GDScript_i2lhh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_13w0g")

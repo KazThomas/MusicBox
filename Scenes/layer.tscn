@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://cua4ws02vsghc"]
+
+[ext_resource type="Texture2D" uid="uid://dilxepra33a7g" path="res://Assets/Border.png" id="1_2ajos"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 0.01
+gravity_scale = 0.0
+center_of_mass_mode = 1
+lock_rotation = true
+freeze = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(339, 414)
+polygon = PackedVector2Array(-306, 407, 310, 406, 309, -442, 343, -442, 342, 427, 328, 438, -330, 439, -340, 423, -342, -443, -305, -443)
+
+[node name="Border" type="Sprite2D" parent="."]
+position = Vector2(339, 414)
+texture = ExtResource("1_2ajos")
