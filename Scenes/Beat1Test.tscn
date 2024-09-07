@@ -13,6 +13,7 @@ size = Vector2(36, 34)
 mass = 0.64
 physics_material_override = SubResource("PhysicsMaterial_ewmc5")
 gravity_scale = 0.3
+lock_rotation = true
 script = ExtResource("1_4vtri")
 
 [node name="1Beat" type="Sprite2D" parent="."]

@@ -1,0 +1,67 @@
+[gd_scene load_steps=6 format=3 uid="uid://c4feeeeu0a2dd"]
+
+[ext_resource type="Script" path="res://Scripts/mainScene.gd" id="1_g0soy"]
+[ext_resource type="PackedScene" uid="uid://cua4ws02vsghc" path="res://Scenes/layer.tscn" id="4_1xi1q"]
+[ext_resource type="PackedScene" uid="uid://d02n2etuakbmi" path="res://Scenes/bank.tscn" id="4_an7dp"]
+[ext_resource type="PackedScene" uid="uid://ondofxvedg8l" path="res://Scenes/VinylRecord.tscn" id="4_q7it6"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bpecw"]
+b = Vector2(589, 0)
+
+[node name="Main" type="Node"]
+script = ExtResource("1_g0soy")
+
+[node name="Label" type="Label" parent="."]
+clip_contents = true
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 617.0
+offset_top = -178.0
+offset_right = 1475.0
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 76
+text = "you shouldn't be seeing this"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+
+[node name="VinylRecord" parent="." instance=ExtResource("4_q7it6")]
+position = Vector2(580, 481)
+
+[node name="Layer" parent="." instance=ExtResource("4_1xi1q")]
+visible = false
+position = Vector2(222, 49)
+
+[node name="Roof" type="Node2D" parent="."]
+position = Vector2(268, 33)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Roof"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Roof/StaticBody2D"]
+shape = SubResource("SegmentShape2D_bpecw")
+
+[node name="spawnZone" type="Node" parent="."]
+
+[node name="point1" type="Node2D" parent="spawnZone"]
+position = Vector2(257, 33)
+
+[node name="point2" type="Node2D" parent="spawnZone"]
+position = Vector2(868, 33)
+
+[node name="Banks" type="Node" parent="."]
+
+[node name="Bank" parent="Banks" instance=ExtResource("4_an7dp")]
+
+[node name="Bank2" parent="Banks" instance=ExtResource("4_an7dp")]
+position = Vector2(1024, 324)
+
+[node name="Bank3" parent="Banks" instance=ExtResource("4_an7dp")]
+position = Vector2(1024, 504)
+
+[node name="Bank4" parent="Banks" instance=ExtResource("4_an7dp")]
+position = Vector2(1024, 684)

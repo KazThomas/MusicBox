@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpaep2n8dtkjs"]
+
+[ext_resource type="Texture2D" uid="uid://dgng8qu31k3wp" path="res://Assets/Art/Rest note.png" id="1_q0xix"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftchx"]
+size = Vector2(40, 40)
+
+[node name="RestBeat" type="RigidBody2D"]
+lock_rotation = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q0xix")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ftchx")
