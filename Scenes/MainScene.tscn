@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://c4feeeeu0a2dd"]
+[gd_scene load_steps=7 format=3 uid="uid://c4feeeeu0a2dd"]
 
 [ext_resource type="Script" path="res://Scripts/mainScene.gd" id="1_g0soy"]
 [ext_resource type="PackedScene" uid="uid://cua4ws02vsghc" path="res://Scenes/layer.tscn" id="4_1xi1q"]
 [ext_resource type="PackedScene" uid="uid://d02n2etuakbmi" path="res://Scenes/bank.tscn" id="4_an7dp"]
 [ext_resource type="PackedScene" uid="uid://ondofxvedg8l" path="res://Scenes/VinylRecord.tscn" id="4_q7it6"]
+[ext_resource type="Texture2D" uid="uid://dv64wkmaxja8s" path="res://Assets/Art/space bar ui .png" id="5_j27gt"]
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bpecw"]
 b = Vector2(589, 0)
@@ -65,3 +66,10 @@ position = Vector2(1024, 504)
 
 [node name="Bank4" parent="Banks" instance=ExtResource("4_an7dp")]
 position = Vector2(1024, 684)
+
+[node name="Menu" type="Node" parent="."]
+
+[node name="SpaceBarUi" type="Sprite2D" parent="Menu"]
+position = Vector2(607, 453)
+scale = Vector2(0.61032, 0.61032)
+texture = ExtResource("5_j27gt")
