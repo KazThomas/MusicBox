@@ -73,3 +73,5 @@ position = Vector2(1024, 684)
 position = Vector2(607, 453)
 scale = Vector2(0.61032, 0.61032)
 texture = ExtResource("5_j27gt")
+
+[connection signal="spawn_note" from="." to="." method="_on_spawn_note"]
