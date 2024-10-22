@@ -54,18 +54,17 @@ func _input(event):
 func _on_spawn_note():
 	var rest = load("res://Scenes/rest_beat.tscn").instantiate()
 	 #if its declared at top - dont work
-	var randomNote : int =  randi_range(1, 2)
+	var randomNote : int =  randi_range(0, 100)
 	
 	var y_pos = roof.position.y + 20
 	if mouse_x >= point_1.position.x && mouse_x <= point_2.position.x:
 		#replace this line ^ to detect if something is falling
 		
 		
-		match  randomNote:
-			1:
-				beat.position = Vector2(mouse_x, y_pos)
-				add_child(beat)
-			2:
+		if  randomNote <= 80:
+			beat.position = Vector2(mouse_x, y_pos)
+			add_child(beat)
+		else:
 				rest.position = Vector2(mouse_x, y_pos)
 				add_child(rest)
 
@@ -77,4 +76,4 @@ func _on_spawn_note():
 # NEED TO CHECK IF OBJECT IS FALLING
 # NEED TO SEE IF BANK IS HIGHLIGHTED
 # NEED TO CHECK IF BANK IS OCCUPIED
-
+# NEED TO USE A RANDOMISED MATCH STATEMENT INSTEAD OF RELYING ON IFS AND ELSE'S
