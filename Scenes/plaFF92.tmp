@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhfb2syi3umal"]
+
+[ext_resource type="Texture2D" uid="uid://clsapof0vow6p" path="res://Assets/Art/Play button.png" id="1_n1cqa"]
+[ext_resource type="Script" path="res://Scenes/play_btn.gd" id="1_q3wd6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nhyqc"]
+size = Vector2(44, 50)
+
+[node name="PlayBtn" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_q3wd6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_n1cqa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 0)
+shape = SubResource("RectangleShape2D_nhyqc")
